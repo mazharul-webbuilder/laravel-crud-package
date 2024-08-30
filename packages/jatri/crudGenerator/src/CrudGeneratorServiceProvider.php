@@ -35,7 +35,7 @@ class CrudGeneratorServiceProvider extends ServiceProvider
     /**
      * Register any package services.
      */
-    public function register()
+    public function register(): void
     {
         $this->mergeConfigFrom(
             __DIR__.'/config/crudgenerator.php',

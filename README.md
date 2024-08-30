@@ -35,6 +35,32 @@ Add the package to your Laravel application using Composer.
    }
 
 
+Run the composer command to install this package
+```bash 
+composer require jatri/crud-generator
+```
+
+Register the Service Provider to config/app.php
+```
+'providers' => [
+    // ........
+    Jatri\CrudGenerator\CrudGeneratorServiceProvider::class,
+],
+```
+
+Run the following Artisan command to publish them
+
+```bash
+  php artisan vendor:publish --provider="Jatri\CrudGenerator\CrudGeneratorServiceProvider"
+
+```
+
+Run the migration
+
+```bash
+php artisan migrate
+```
+
 ## Usage
 
 To use the Laravel CRUD Generator package, follow these steps:
