@@ -1,0 +1,30 @@
+{
+    "name": "jatri/crud-generator",
+    "description": "A package to generate CRUD operations in Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mazharul Islam",
+            "email": "mazharulislam1998r@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jatri\\CrudGenerator\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jatri\\CrudGenerator\\CrudGeneratorServiceProvider"
+            ]
+        }
+    }
+
+}
