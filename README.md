@@ -24,10 +24,10 @@ Add the package to your Laravel application using Composer.
    ```json
    {
        "repositories": [
-           {
-               "type": "path",
-               "url": "packages/jatri/crud-generator"
-           }
+            {
+            "type": "path",
+            "url": "packages/jatri/crudGenerator"
+        }
        ],
        "require": {
            "jatri/crud-generator": "*"

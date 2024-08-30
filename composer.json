@@ -4,10 +4,17 @@
     "description": "The skeleton application for the Laravel framework.",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/jatri/crudGenerator"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "laravel/framework": "^11.9",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "jatri/crud-generator": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -23,7 +30,6 @@
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
             "Jatri\\CrudGenerator\\": "packages/jatri/crudGenerator/src/"
-
         }
     },
     "autoload-dev": {
